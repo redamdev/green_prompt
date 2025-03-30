@@ -57,7 +57,7 @@ This project empowers developers to build engaging chat experiences with a focus
 - 🔒 **Robust Dependency Management:** Ensure consistent environments with `package-lock.json`, minimizing integration issues.
 - 💬 **Real-time Chat Functionality:** Seamlessly manage chat interactions, enhancing user engagement and communication.
 - 🌍 **Sustainability Awareness:** Track cost and carbon savings, fostering environmental consciousness among users.
-- 🤖 **AI Integration:** Utilize OpenAI for dynamic conversations, providing intelligent responses that enhance user experience.
+- 🤖 **AI Integration:** Utilize OpenAI for dynamic conversations, providing intelligent responses that enhance user experience and NVIDIA's prompt complexity model.
 
 ---
 
@@ -112,21 +112,6 @@ npm start
 
 ```sh
 python {entrypoint}
-```
-
-### Testing
-
-Green_prompt uses the {__test_framework__} test framework. Run the test suite with:
-
-**Using [npm](https://www.npmjs.com/):**
-
-```sh
-npm test
-```
-**Using [pip](https://pypi.org/project/pip/):**
-
-```sh
-pytest
 ```
 
 ---
