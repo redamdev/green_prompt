@@ -1,0 +1,181 @@
+.chat-messages {
+    flex: 1;
+    padding: 20px 24px;
+    overflow-y: auto;
+    background-color: #f9f9fc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  
+  .user-message {
+    margin-left: auto; /* This is the key fix - pushes message to right edge */
+    flex-direction: row-reverse;
+  }
+  
+  .assistant-message {
+    align-self: flex-start;
+  }
+  
+  .message-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 8px;
+  }
+  
+  .user-message .message-avatar {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .assistant-message .message-avatar {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+  }
+  
+  .message-content {
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  
+  .user-message .message-content {
+    background-color: var(--primary-color);
+    color: white;
+    border-top-right-radius: 4px;
+  }
+  
+  .assistant-message .message-content {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 4px;
+  }
+  
+  .empty-chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text);
+    text-align: center;
+    margin: auto 0;
+  }
+  
+  /* Modify the empty-chat-icon style */
+
+.empty-chat-icon {
+    margin-bottom: 16px;
+    color: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .empty-chat h3 {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .empty-chat p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+  }
+  
+  .typing-indicator span {
+    height: 8px;
+    width: 8px;
+    background-color: var(--light-text);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    opacity: 0.6;
+    animation: typing 1.4s infinite both;
+  }
+  
+  .typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+/* Add these styles to the bottom of your Messages.css file */
+
+.savings-breakdown {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 42px;
+    padding: 8px 12px;
+    background-color: #f3f8f5;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 80%;
+    font-size: 12px;
+  }
+  
+  .savings-icon {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  
+  .savings-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .cost-saved, .carbon-saved {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cost-saved {
+    color: #2e8b57;
+  }
+  
+  .carbon-saved {
+    color: #4286f4;
+  }
+  
+  .savings-value {
+    font-weight: 600;
+    margin-left: 4px;
+  }

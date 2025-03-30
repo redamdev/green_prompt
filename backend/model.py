@@ -195,7 +195,6 @@ model.eval()
 
 def classify(prompt):
 
-    # Tokenize the input prompt
     encoded_texts = tokenizer(
         [prompt],
         return_tensors="pt",
@@ -205,9 +204,7 @@ def classify(prompt):
         truncation=True,
     )
 
-    # Perform inference
-    with torch.no_grad():  # Disable gradient computation for inference
+    with torch.no_grad():
         result = model(encoded_texts)
 
-    # Return the prompt complexity score
     return result["prompt_complexity_score"]

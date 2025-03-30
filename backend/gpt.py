@@ -7,18 +7,25 @@ api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
 def chat(prompt, context, model):
+
+    messages = [{"role": "system", "content": "You are a helpful assistant."}]
+
+    for msg in context:
+        if msg["role"] in ["user", "assistant"]:
+            messages.append(msg)
     
-    context_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in context])
-    input_text = f"{context_text}\nuser: {prompt}"
+    messages.append({"role": "user", "content": prompt})
 
     try:
-        response = client.responses.create(
+        response = client.chat.completions.create(
             model=model,
-            instructions="Respond as a helpful assistant.",
-            input=input_text,
+            messages=messages,
+            temperature=0.7,
+            max_tokens=800
         )
-
-        return response.output_text
+        
+        return response.choices[0].message.content
 
     except Exception as e:
-        return (f"Error generating response: {e}")
+        print(f"Error generating response: {e}")
+        return f"Error generating response: {e}"
