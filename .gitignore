@@ -22,3 +22,39 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python-related
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+
+# Logs
+*.log
+
+# Model files and large binaries
+*.pt
+*.pth
+*.h5
+*.onnx
+
+# Credentials and keys
+firebase-key.json
+*.pem
+*.key
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

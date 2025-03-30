@@ -1,0 +1,13 @@
+flask==3.0.2
+flask-cors==4.0.0
+textblob==0.17.1
+nltk==3.8.1
+transformers==4.46.2
+torch>=2.0.0
+torchvision>=0.15.0
+numpy<2
+pandas
+python-dotenv
+firebase-admin
+openai
+huggingface_hub
