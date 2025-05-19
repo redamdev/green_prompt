@@ -51,13 +51,11 @@ Green Prompt is a cutting-edge developer tool that streamlines the creation of c
 
 **Why Green Prompt?**
 
-This project empowers developers to build engaging chat experiences with a focus on environmental awareness. The core features include:
+This project empowers users engaging with LLM chat experiences to limit their environmental impact. The core features include:
 
-- 🌱 **Efficient Development:** Leverage Vite for fast builds and optimized performance, reducing development time.
-- 🔒 **Robust Dependency Management:** Ensure consistent environments with `package-lock.json`, minimizing integration issues.
 - 💬 **Real-time Chat Functionality:** Seamlessly manage chat interactions, enhancing user engagement and communication.
 - 🌍 **Sustainability Awareness:** Track cost and carbon savings, fostering environmental consciousness among users.
-- 🤖 **AI Integration:** Utilize OpenAI for dynamic conversations, providing intelligent responses that enhance user experience and NVIDIA's prompt complexity model.
+- 🤖 **AI Integration:** Utilize OpenAI for dynamic conversations, providing intelligent responses that enhance user experience while using NVIDIA's prompt complexity model to choose the model level.
 
 ---
 
