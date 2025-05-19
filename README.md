@@ -41,13 +41,12 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Usage](#usage)
-    - [Testing](#testing)
 
 ---
 
 ## Overview
 
-Green Prompt is a cutting-edge developer tool that streamlines the creation of chat applications while promoting sustainability through intelligent design and real-time interactions.
+Green Prompt is a cutting-edge, sustainable chat interface that switches between models depending on the users' prompt complexity. HooHacks 2025 Participant.
 
 **Why Green Prompt?**
 
